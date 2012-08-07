@@ -2,7 +2,7 @@
 require_once 'libs/moduls.php';
 require_once 'libs/view.php';
 
-$page = isset($_GET['page']) ? $_GET['page'] : 'first';
+$page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
 if($page == 'users'){
 
@@ -20,4 +20,3 @@ if($page == 'users'){
 if(!file_exists("template/$page.php")) $page='404';
 
 @include "template/$page.php";
-?>
