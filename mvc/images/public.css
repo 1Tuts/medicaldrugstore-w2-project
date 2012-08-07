@@ -94,17 +94,31 @@ div.down ul{
 	list-style:none;
 	margin-right:15px;
 	padding-right:15px;	
+	-moz-transition:all 1s;
+	-o-transition:all 1s;
+	-ms-transition:all 1s;
+	-webkit-transition:all 1s;
 }
 
 div.down li{
 	
 	font-size:16px;
+	-moz-transition:all 1s;
+	-o-transition:all 1s;
+	-ms-transition:all 1s;
+	-webkit-transition:all 1s;
+	
+	
 }
 
 div.down li:hover{
 	font-size:18px;
 	background-color:#09F;
 	width:170px;
+	-moz-transition:all 500ms;
+	-o-transition:all 500ms;
+	-ms-transition:all 500ms;
+	-webkit-transition:all 500ms;
 	
 }
 
@@ -145,12 +159,18 @@ div.pagename{
 	font-family:"Courier New", Courier, monospace;
 	color:#00F;
 	text-align:center;
+	-moz-transition:all 1s;
+	-o-transition:all 1s;
+	-ms-transition:all 1s;
+	-webkit-transition:all 1s;
 }
 
 div.pagename:hover{
 	text-shadow:#999 2px 2px 2px;
 	color:#FFF;
-	background-color:#33F;	
+	background-color:#33F;
+	border:1px solid #33F;
+	border-radius:5px;	
 }
 
 div.picture{
@@ -159,7 +179,18 @@ div.picture{
 	width:200px;
 	margin:30px;	
 }
+div.picture1{
+	float:left;
+	height:320px;
+	width:200px;
+	background-image:url(index.jpeg);	
+	position:relative;
+}
 
+div.para{
+	margin-left:210px;
+	height:320px;
+}
 div.text{
 	margin-left:30px;
 	height:485px;
@@ -321,15 +352,19 @@ div.text ul{
 }
 
 .namekala:hover{
-	box-shadow:10px 10px 5px #666666;
+	box-shadow:10px 10px 50px #666666;
+	border:none;
+	z-index:2;
 }
 
 .gheymat:hover{
-	box-shadow:10px 10px 5px #666666;
+	box-shadow:10px 10px 50px #666666;
+	z-index:2;
 }
 
 .sefaresh:hover{
-	box-shadow:10px 10px 5px #666666;
+	box-shadow:10px 10px 50px #666666;
+	z-index:2;
 }
 
 div.text li:nth-child(even) {
@@ -341,6 +376,10 @@ div.text li:nth-child(odd) {
 
 div.text li:hover{
 	font-size:18px;
+	padding:11px;
+}
+div.text li:first-child:hover{
+	padding:13px;
 }
 
 div.text li:first-child{
@@ -375,6 +414,10 @@ div.namenews{
 .mypic{
 	width:200px;
 	height:120px;	
+}
+.mypic1{
+	width:200px;
+	height:320px;	
 }
 
 div.left{
