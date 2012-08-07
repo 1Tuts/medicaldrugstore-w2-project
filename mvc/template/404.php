@@ -1,6 +1,6 @@
 <?php include('template/inc/header.php') ?>
-	
-<h2>404 Page not found</h2>
+<br/><br/><br/><br/>
+<h2 style="color:white;">404 Page not found</h2>
 
 <a href="./">Back to home</a>
 

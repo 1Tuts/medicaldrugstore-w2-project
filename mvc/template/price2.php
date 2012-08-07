@@ -1,17 +1,4 @@
-<!doctype html>
-<html>
-<head>
-<link href="public.css" type="text/css" rel="stylesheet" />
-<meta charset="utf-8">
-<title>price</title>
-</head>
-
-<body>
- 	<div class="header"> </div>
-    <div class="footer"></div>
-
-	<div class="container">
-   		
+<?php include('template/inc/header.php') ?>
     	
         <div class="main">
         	<div class="menu">
@@ -20,16 +7,7 @@
                     </div>
                 </div>
                 <div class="down">
-                	<ul>
-                    	<li><a href="index.html"> صفحه اصلی</a></li>
-                        <li><a href="signup.php">عضویت در سایت</a></li>
-                        <li><a href="news.php">اخبارپزشکی</a></li>
-                        <li><a href="price.php">داروها</a></li>
-                        <li><a href="price2.php">محصولات بهداشتی</a></li>
-                        <li><a href="aboutus.php">درباره ما</a></li>
-                        <li><a href="garantee.php">بیمه های طرف قرارداد</a></li>
-                        <li><a href="contactus.php">ارتباط با ما</a></li>
-                    </ul>
+                	<?php include('template/inc/menus.php') ?>
                 </div>
             </div>
             <div class="content">
@@ -78,8 +56,4 @@
             </div>
         </div>
         
-    </div>
-    <div class="backimg"></div>
-    <div class="backefct"></div>
-</body>
-</html>
+    <?php include('template/inc/footer.php') ?>

@@ -8,5 +8,6 @@
 
 <body>
  	<div class="header"> </div>
+    <div class="footer"></div>
+
 	<div class="container">
-   		
