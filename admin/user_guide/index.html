@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <link rel="stylesheet" media="screen" type="text/css" href="css/style.css" />
+    <title>Universal PHP Admin - User guide</title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Universal PHP Admin - User guide</h1>
+        <ul class="navigationTabs">
+            <li><a href="#about" rel="about">About</a></li>
+            <li><a href="#installation" rel="installation">Installation</a></li>
+			<li><a href="#getting_started" rel="getting started">Getting Started</a></li>
+			<li><a href="#check_list" rel="check list">Users</a></li>
+			<li><a href="#customization" rel="check list">Customization</a></li>
+			<li><a href="#styling" rel="styling">Styling</a></li>
+			<li><a href="#updating" rel="updating">Updating</a></li>
+			<li><a href="#translation" rel="updating">Translation</a></li>
+        </ul>
+        <div class="tabsContent">
+            <div class="tab">
+                <h2>About</h2>
+				<p>Universal PHP Admin is a php script that is created to manage any type of php application or website. It provides a flexible backend or content management system (CMS) that can be easily customized to manage a blog, a gallery, a poll e.t.c. It comes with its own user authentication system that allows for granular management of the access that the users have to the backend. With this script you will not have to keep creating backends for every php project from scratch.</p>
+                <h3>Features</h3>
+                <ul>
+                    <li>Create a backend for any PHP application in minutes</li>
+					<li>Easy to configure</li>
+					<li>Integrated user authentication system</li>
+                    <li>Easy to add your own validation and actions</li>
+				</ul>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+            </div>
+            <div class="tab">
+                <h2>Installation</h2>
+                <ol>
+                    <li>Unzip the package.</li>
+					<li>Upload the folder named "universal_admin" to you server</li>
+					<li>Open the <dfn>includes/settings.php</dfn>. Change the information for your database and domain and other settings</li>
+					<li>Navigate to the install.php file to create the first admin account.</li>
+					<li>Delete the <dfn>install.php</dfn> file and then navigate to the <dfn>login.php</dfn> file.</li>
+				</ol>
+				<p>That's it!</p>
+				<p>If you're new to Universal PHP Admin, please read the <dfn>Getting Started</dfn> section to begin using Universal PHP Admin.</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+            </div>
+			<div class="tab">
+				 <h2>Getting Started</h2>
+					<p>Once Universal PHP Admin has been installed you will been to configure it so that it can your specific application. Universal PHP Admin is design with the assumption that all the objects in your application have a corresponding table in your database. Configuring Universal PHP Admin entails defining the tables for these objects and their fields</p>
+					<p>To start configuring Universal PHP Admin, just sign in and click on the <dfn>configure</dfn> link at the top-right area on the Admin dashboard.</p>
+					<h3>DEFINING TABLES</h3>
+					<p>First we will need to add a table. To define a table all you need is the table's name and a display name that will be convinient for users. For example, lets say that you have a poll application that you need to manage and the poll questions are saved in a table named mysite_polls. You would define this table by providing its name as mysite_polls and a display name Polls.</p>
+					<p>After you click save you will then be directed to define the fields for this table.</p>
+					<p>For your own convinence you will need to start by defining tables that are not linked to other tables. For example if you have a table for polls questions and another for the choices for these questions, you would need to start by defining th table for the polls and then the one for the choices.</p>
+					<h3>DEFINING FIELDS</h3>
+					<p>To define a field you will need to provide the following information. Please read this section carefully.</p>
+					<ul>
+						<li><b>name:</b> This is the name of the field in the table. REQUIRED</li>
+						<li><b>display name:</b> This is a more userfriendly name that you can give the field.</li>
+						<li><b>input widget:</b> You will need to select the best widget that will best suit the field in the forms for adding and changing the object.</li>
+						<li><b>is it required:</b> If the field is always required you will need to check the checkbox.</li>
+						<li><b>use as string representation of record:</b> For example, when the images in a gallery are listed the user can most easily identify the images by the titles they have been given. The title would therefore be the string representation of the object and when you defined the title you would check this check box. Every table requires only one field to be the string representation of the object.</li>
+						<li><b>Is it visible on the change list page:</b> Will this field be displayed on the change list page (The page that lists the records of a table)?</li>
+					</ul>
+					<p>Depending on the input widget that you will have selected for a field you may be needed to provide additional information:</p>
+					<p><b>Checkbox:</b><br/> A checkbox widget require you to specify the value that will be saved if it is checked and another value if the the checkbox is not checked. You will also need to specify if it is checked or not by default</p>
+					<p><b>Foreign Key:</b><br/> For this widget you will need to select the table to which this field is linked to.</p>
+					<p><b>Date/Time :</b><br/> You will need to specify the format that will be used to save the date. The format should be the PHP style, i.e. D F j, Y, g:i a. If this value is not provided then the timestamp is saved. You could also choose to make it that the field is automatically filled with the current timestamp when a record is created or updated</p>
+					<p><b>Upload File:</b><br/> You will need to specify the path to the folder where the uploaded file will be saved. This path need to be relative to the administration folder of the Universal PHP Admin package. You will also need to specify the allowed file extensions in this format: png|jpg|gif|swf</p>
+					<p><b>Select options:</b><br/> You will need to specify the options This widget will use the select form element. For each option that can be selected you will need to specify the value that will be displayed and the value that will be saved. For example, lets say that you want to save the gender of a person as F or M but you want the person that will input the information to see either Female or Male. You will need to input the options as <br/><input class="input" type="text" value="F:Female;M:Male"><br/> The widget in the add and change forms will look like this<br/> <select><option value="M">Male</option><option value="F">Female</option></select></p>
+					<p><b>Note:</b> Each tables needs one field to be the primary key and one field to be the string representation. If either of these two is missing then the table is not displayed in the Admin Dashboard</p>
+					<p>Once you have defined the tables and their fields then you can start managing them from the dashboard</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+            </div>
+			<div class="tab">
+                <h2>User authentication</h2>
+                <p>In the Admin Dashboard there are 3 area that can be accessed:</p>
+				<ul>
+					<li><b>Authentication:</b> The pages that can be used to add, change and delete users, roles and permissions</li>
+					<li><b>Configuration:</b> The pages that are used to configure the tables and the fields.</li>
+					<li><b>Tables:</b> The pages that are used to add, change and delete the objects/items</li>
+				</ul>
+				<p>The things that a user can do in the Dashboard can be controlled using the permissions that their roles have.</p>
+				<p>Everytime a table is defines permissions to add, change and delete the table's items are also automatically created.</p>
+				<p>The authentication system can also be used to manage pages that are not part of the admin dashboard. To do this all you need to do is:</p>
+				<ol>
+                    <li>Define the permission for the pages.</li>
+					<li>Define a role that has the permission</li>
+					<li>Assign the users that will access the pages the role</li>
+					<li>Include the the file <dfn>includes/admin.php</dfn> in the pages that you need to restrict access to.</li>
+					<li>Create an instance of the Admin class: <dfn>&lt;?php $admin = new Admin(); ?&gt;</dfn></li>
+					<li>Place the following php script at the top of the page:<br/><dfn>&lt;?php <br/>if(!$admin->user_has_role('role name')){<br/>
+																								header('Location: the_login_file.php'); // this is a page of your choosing<br/>
+																								exit();<br/>
+																								}<br/>
+																				?&gt;</dfn></li>
+					<li>There is also a function for checking for a permissions:<br/> <dfn>&lt;?php $admin->user_has_permission('permission_key') ?&gt;</dfn></li>
+				</ol>
+				<p>To access user information from the session variables:</p>
+				<ul>
+					<li>User id: $_SESSION['sadmin_user_id']</li>
+					<li>User email: $_SESSION['sadmin_user_email']</li>
+					<li>User role id: $_SESSION['sadmin_user_role']</li>
+				</ul>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+            </div>
+			<div class="tab">
+                <h2>Customization</h2>
+				<p>You can further customize Universal PHP Admin adding your own validation rules for input and actions to be performed on items.</p>
+				<h3>Validation</h3>
+				<p>To add you own validation you will need to first add a function for doing the validation in the file <dfn>includes/validation.php</dfn>. The function should be something like this:</p>
+				<p>
+				<textarea name="validation" cols="80" rows="20">
+private function numeric_value(){ //unique name for you function. No arguments
+$field_name = $this->the_field; // Get the value to validate like this
+	
+$results = array(); // the function should return an array with two keys
+
+//Key 1 is 'error_message'. This is the msg displayed when the value is invalid
+$results['error_message'] = " The value provided for $field_name needs to be numeric.";
+
+//Key 2 is 'valid'. This is a boolean for whether the value is valid or not
+$results['valid'] = true;
+
+// Do your validation here.
+// You can access the database normally. Do not open or close a connection
+$str = trim($this->the_value);
+$holder_array = str_split($str);
+$holder_str = '';
+foreach($holder_array as $holder)
+{
+	if (!preg_match("/[0-9]/", $holder))
+	{
+		$results['valid'] = false;
+	}
+}
+
+//return the array	
+return $results;
+}
+				</textarea>
+				</p>
+				<p>After you have created the function, add its details to the __construct() function of the class like this:<br/> <dfn>$this->validation_functions[] = array('table'=>'the_table_name', 'field' => 'the_field_name', 'function'=>'the_function_name');</dfn></p>
+                <p>That is all it takes.</p>
+				
+				<h3>Actions</h3>
+				<p>Actions can be performed on items in the change list.</p>
+				<p>To add an action you will need to first add the function in the file <dfn>includes/actions.php</dfn>. The function should be something like this:</p>
+				<p>
+				<textarea name="validation" cols="80" rows="20">
+private function delete() // give the function a unique name
+{
+$results = array(); the function should return an array with 3 keys
+
+// Key 1 is 'success_message' - to displayed when the action is successful
+$results['success_message'] = 'The records were successfully deleted.';
+
+// Key 2 is 'error_message' - to displayed when the action is fails
+$results['error_message'] = 'There was an error. Please try again.';
+
+// Key 3 is 'status' - To indicate if the action was a success or not
+$results['status'] = 'error';
+
+// you can run mysql queries as normal. There is no need to open a connection
+$table = $this->current_table; //The current table can be accessed like this
+$primary_key = $this->current_table_primary_key; //The the primary key fields name of the current table can be accessed like this
+foreach($this->posted_ids as $id) //The ids of the records that where selected can be accessed like this
+{
+	$qry = mysql_query("DELETE FROM $table WHERE $primary_key = $id");
+}
+$results['status'] = 'success';
+		
+return $results;
+}
+				</textarea>
+				</p>
+				<p>After you have created the function, add its details to the __construct() function of the class like this:<br/> <dfn>$this->action_functions[] = array('table'=>'the_table_name', 'function_name'=>'the_function_name', 'display_message'=>'The name for the action to in the select list');</dfn></p>
+                <p>That is all it takes.</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+            </div>
+			<div class="tab">
+                <h2>Styling</h2>
+				<p>The following are the styling changes that you might want to make:</p>
+				<ul>
+					<li><b>Admin dashboard pages:</b> The styling for these can be change in the file <dfn>administration/assets/css/style.css</dfn>.</li>
+					<li><b>The log in pages:</b> The styling for these can be change in the <dfn>administration/assets/css/login.css</dfn></li>
+				</ul>
+                <p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+            </div>
+			<div class="tab">
+                <h2>Updating</h2>
+				<ol>
+					<li>Download and unzip the package</li>
+					<li>If you have made changes to <dfn>includes/actions.php</dfn> or <dfn>includes/validation.php</dfn>, then replace these two files in the new package with the ones you have changed</li>
+					<li>Open the <dfn>includes/settings.php</dfn>. Change the information for your database and domain and other settings</li>
+					<li>Back up you old files</li>
+					<li>Upload the new package</li>
+					<li>Your script is now updated.</li>
+				</ol>
+                <p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+            </div>
+			<div class="tab">
+                <h2>Translation</h2>
+				<p>This script has been prepared for translation. To translate it, simple follow these instructions.</p>
+				<ol>
+					<li>Go to the folder <dfn>includes/language/</dfn></li>
+					<li>Make a copy of the folder <dfn>english</dfn> and rename it to the language of your choice.</li>
+					<li>Open the folder you have just created and you will find a number of php files that define array elements for the text that the script displays.</li>
+					<li>One by one make changes to each of the array elements in all of the files.</li>
+					<li>When you are done  translating open the <dfn>includes/settings.php</dfn>. Change line 40 <dfn>$config['language']</dfn> from english to the name of the folder you just create and you are done.</li>
+				</ol>
+                <p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+            </div>
+        </div>
+    </div>
+	<p>&nbsp;</p>
+</body>
+</html>
