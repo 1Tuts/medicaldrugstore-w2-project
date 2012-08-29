@@ -22,38 +22,24 @@
                     جستجو بر اساس نام بیماری: <input type="text" class="search"/> 
                  </div>
                 <div class="text">
-                     <ul class="sefaresh">
-                            <li>نوع بیماری</li>
-                            <li><a href="#">نوع بیماری</a></li>
-                            <li><a href="#">نوع بیماری</a></li>
-                            <li><a href="#">نوع بیماری</a></li>
-                            <li><a href="#">نوع بیماری</a></li>
-                            <li><a href="#">نوع بیماری</a></li>
-                            <li><a href="#">نوع بیماری</a></li>
-                             <li><a href="#">نوع بیماری</a></li>
-                     </ul>
-                     <ul class="gheymat">
-                    	<li>قیمت</li>
-                        <li><a href="#">50$</a></li>
-                        <li><a href="#">50$</a></li>
-                        <li><a href="#">50$</a></li>
-                        <li><a href="#">50$</a></li>
-                        <li><a href="#">50$</a></li>
-                        <li><a href="#">50$</a></li>
-                        <li><a href="#">50$</a></li>
+                    <ul class="sefaresh">
+                        <li>نوع بیماری</li>
+                        <?php
+                            echo $drugs_html['sicks'];
+                        ?>
                     </ul>
-                        
-                	<ul class="namekala">
-                    	<li> نام</li>
-                        <li><a href="#">name of product</a></li>
-                        <li><a href="#">name of product</a></li>
-                        <li><a href="#">name of product</a></li>
-                        <li><a href="#">name of product</a></li>
-                        <li><a href="#">name of product</a></li>
-                        <li><a href="#">name of product</a></li>
-                        <li><a href="#">name of product</a></li>
+                    <ul class="gheymat">
+                        <li>قیمت</li>
+                        <?php
+                            echo $drugs_html['price'];
+                        ?>
                     </ul>
-          			 
+                    <ul class="namekala">
+                        <li> نام</li>
+                        <?php
+                            echo $drugs_html['name'];
+                        ?>
+                    </ul>
                 </div>
             </div>
             <div class="clear">

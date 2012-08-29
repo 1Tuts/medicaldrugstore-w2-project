@@ -1,21 +1,12 @@
+
 <?php
 
-function show_table($rows){
-	echo '<table border="1"';
-	
-	echo '<tr>';
-		foreach ($rows[0] as $fieldname => $fieldvalue) {
-			echo "<th>$fieldname</th>";
-		}
-	echo '</tr>';
-
-	foreach ($rows as $row) {
-		echo '<tr>';
-		foreach ($row as $fieldname => $fieldvalue) {
-			echo "<td>$fieldvalue</td>";
-		}
-		echo '</tr>';
+function gen_drugs_price($drugs,$field){
+	$html = '';
+	foreach($drugs as $drug){
+		$text = $drug[$field];
+		if($field=='price') $text.=' ريال';
+		$html .= "<li><a href='./?page=detail&id=$drug[id]'>$text</a></li>";
 	}
-
-	echo '</table>';
+	return $html;
 }
