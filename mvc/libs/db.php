@@ -25,13 +25,14 @@ function db_connect(){
 
 function db_query($q){
 	global $db;
+	if(!$db['con']) db_connect();
 	$res = @mysql_query($q,$db['con']) or db_err();
 	return $res;
 }
 
 function db_close(){
 	global $db;
-	@mysql_close($db['con']);
+	if($db['con']) @mysql_close($db['con']);
 }
 
 function db_getrows($table, $sellect = '*', $where = true){
