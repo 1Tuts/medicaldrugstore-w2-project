@@ -1,6 +1,6 @@
 <?php
 	//$menus = "Menu 1 name,menu1-url; Menu 2 name,menu2-url";
-	$menus = "صفحه اصلی,home; درباره ما,aboutus; اخبارپزشکی,news; داروها,price1; محصولات بهداشتی,price2; سفارش دارو,order; بیمه های طرف قرارداد,garantee; گالری,gallery; ارتباط با ما,contactus";
+	$menus = "صفحه اصلی,home; درباره ما,aboutus; اخبارپزشکی,new; داروها,price1; محصولات بهداشتی,price2; سفارش دارو,orderform; بیمه های طرف قرارداد,garantee; گالری,gallery; ارتباط با ما,contactus";
 
 	$menus = explode('; ', $menus);
 	echo '<ul>';

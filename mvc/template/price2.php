@@ -13,20 +13,20 @@
             <div class="content">
             	<div class="subject">
                 	<div class="pagename">
-                    لیست محصولات بهداشتی
+                    لیست داروها
                     </div>
                     
                 </div>
                 <div class="text">
                      <ul class="sefaresh">
                             <li>سفارش</li>
-                            <li><a href="#"><input type="checkbox"/></a></li>
-                            <li><a href="#"><input type="checkbox"/></a></li>
-                            <li><a href="#"><input type="checkbox"/></a></li>
-                            <li><a href="#"><input type="checkbox"/></a></li>
-                            <li><a href="#"><input type="checkbox"/></a></li>
-                            <li><a href="#"><input type="checkbox"/></a></li>
-                            <li><a href="#"><input type="checkbox"/></a></li>
+                            <li><a href="#">سفارش</a></li>
+                            <li><a href="#">سفارش</a></li>
+                            <li><a href="#">سفارش</a></li>
+                            <li><a href="#">سفارش</a></li>
+                            <li><a href="#">سفارش</a></li>
+                            <li><a href="#">سفارش</a></li>
+                             <li><a href="#">سفارش</a></li>
                      </ul>
                      <ul class="gheymat">
                     	<li>قیمت</li>

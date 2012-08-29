@@ -23,29 +23,29 @@
                      <div class="address">
                         <h4>آدرس داروخانه</h4>
                         <p>مشهد-خیابان سجاد-بزرگمهر</p>
+                        <p>تلفن:777777-0511</p>
+                        <p>فکس:6666666-0511</p>
                         </div>
                        
                         <div class="form">
                         	<div class="title">
                             <h4>متن خود را تایپ کنید</h4>
                             </div>
-                            <form action="contact.php" method="post">
+                            <form action="?page=contact" method="post" id="msg" name="msg">
                         	<div class="name">
-                            <input class="txt" type="text" placeholder="نام" dir="rtl" name="name"/>
+                            <input class="txt" type="text" placeholder="نام" dir="rtl" name="name" id="name"/>
                             </div>
                             <div class="name">
-                            <input class="txt" type="text" placeholder="موضوع" dir="rtl" name="subject"/>
+                            <input class="txt" type="text" placeholder="موضوع" dir="rtl" name="subject" id="subject"/>
                             </div>
                   	          <div class="email"> 
-                            <input class="txt" type="text" placeholder="ایمیل" dir="rtl" name="email"/>
+                            <input class="txt" type="text" placeholder="ایمیل" dir="rtl" name="mail" id="mail"/>
                             </div>
                             <div class="message">
-                            	<textarea rows="6" cols="31" dir="rtl" placeholder="متن" style="border-radius:5px ;		 	                                 border-color:#36F; box-shadow:2px 2px 1px  #999999; text-shadow:1px 1px 1px #666666;"                                 name="message">
-                              
-                                </textarea>
+                            	<textarea rows="6" cols="31" dir="rtl" style="border-radius:5px ;		 	                                 border-color:#36F; box-shadow:2px 2px 1px  #999999; text-shadow:1px 1px 1px #666666;"                                 name="matn" id="matn"></textarea>
                             </div>
                             <div class="send">
-                            <input class="button" type="submit" name="submit" value="ثبت"/>
+                            <input class="submit" type="submit" name="submit" value="ثبت"/>
                             </div>
                             </form>
                         </div>

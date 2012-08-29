@@ -17,16 +17,20 @@
                     </div>
                     
                 </div>
+                 <div class="search1">
+                    جستجو بر اساس نام دارو: <input type="text" class="search"/> 
+                    جستجو بر اساس نام بیماری: <input type="text" class="search"/> 
+                 </div>
                 <div class="text">
                      <ul class="sefaresh">
-                            <li>سفارش</li>
-                            <li><a href="#">سفارش</a></li>
-                            <li><a href="#">سفارش</a></li>
-                            <li><a href="#">سفارش</a></li>
-                            <li><a href="#">سفارش</a></li>
-                            <li><a href="#">سفارش</a></li>
-                            <li><a href="#">سفارش</a></li>
-                             <li><a href="#">سفارش</a></li>
+                            <li>نوع بیماری</li>
+                            <li><a href="#">نوع بیماری</a></li>
+                            <li><a href="#">نوع بیماری</a></li>
+                            <li><a href="#">نوع بیماری</a></li>
+                            <li><a href="#">نوع بیماری</a></li>
+                            <li><a href="#">نوع بیماری</a></li>
+                            <li><a href="#">نوع بیماری</a></li>
+                             <li><a href="#">نوع بیماری</a></li>
                      </ul>
                      <ul class="gheymat">
                     	<li>قیمت</li>
@@ -56,4 +60,4 @@
             </div>
         </div>
         
-    <?php include('template/inc/footer.php') ?>
+    <?php include('template/inc/footer.php')?>

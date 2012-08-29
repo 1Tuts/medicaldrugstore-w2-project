@@ -1,19 +1,11 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
-
-<body>
 <?php
 $name=$_POST['user'];
 $password=$_POST['pass'];
+$password2=$_POST['pass2'];
 $telephon=$_POST['tel'];
 $email=$_POST['mail'];
+$email2=$_POST['mail2'];
 if(isset($_POST['submit'])){
 echo "thank you";	
 }
 ?>
-</body>
-</html>
