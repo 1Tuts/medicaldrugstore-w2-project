@@ -19,8 +19,23 @@
                 </div>
                 
                 <div class="text">
-                  tabe show tabel 7 satr va 2 sotun.
-            </div>
+                    <?php
+                        if(is_array($drug)){
+                    ?>
+
+                    Name : <?php echo $drug['name'] ?><br/>
+                    Price : <?php echo $drug['price'] ?><br/>
+
+                    <?php
+                        }else{
+                    ?>
+
+                    <p>Not found</p>
+
+                    <?php
+                        }
+                    ?>
+                </div>
             <div class="clear">
             </div>
         </div>
