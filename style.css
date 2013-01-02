@@ -4,6 +4,7 @@
 }
 
 body{
+	background-color:#39F;
 		
 }
 div{
@@ -19,12 +20,42 @@ div.header{
 	margin:0 auto;
 	width:980px;
 	min-height:80px;
+	margin-bottom:15px;
 }
+
+div.logo{
+	float:right;
+	width:200px;
+	min-height:50px;
+	margin:10px 20px;	
+}
+
+div.left1{
+	float:left;
+	width:200px;
+	min-height:50px;
+	margin:10px 20px;
+	}
 
 div.main{
 	margin:0 auto;
 	width:980px;
 	min-height:670px;
+	background-color:#FFF;
+}
+
+div.right{
+	float:right;
+	width:250px;	
+	min-height:630px;
+	margin:auto;
+}
+
+div.left{
+	margin-right:250px;
+	min-height:630px;
+	margin:auto;
+	
 }
 
 div.footer{
