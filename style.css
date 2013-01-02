@@ -1,0 +1,34 @@
+*{
+	padding:0;
+	margin:0;	
+}
+
+body{
+		
+}
+div{
+	outline:solid red 1px;	
+}
+
+div.container{
+	margin:0 auto;
+	width:980px;
+}
+
+div.header{
+	margin:0 auto;
+	width:980px;
+	min-height:80px;
+}
+
+div.main{
+	margin:0 auto;
+	width:980px;
+	min-height:670px;
+}
+
+div.footer{
+	margin:0 auto;
+	min-height:50px;
+	width:980px;
+}
