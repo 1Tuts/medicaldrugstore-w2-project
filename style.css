@@ -13,7 +13,7 @@ div{
 
 div.container{
 	margin:0 auto;
-	min-width:980px;
+	width:980px;
 }
 
 div.header{
@@ -48,7 +48,7 @@ div.menu{
 	float:right;
 	min-width:250px;	
 	min-height:630px;
-	margin:auto;
+	
 }
 
 div.up{
@@ -57,7 +57,18 @@ div.up{
 }
 
 div.down{
+	min-width:250px;
+	min-height:530px;
 	
+}
+
+div.down ul.mymenu{
+	list-style-type:none;	
+}
+
+div.down a{
+	text-decoration:none;
+		
 }
 
 div.content{
