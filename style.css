@@ -13,53 +13,80 @@ div{
 
 div.container{
 	margin:0 auto;
-	width:980px;
+	min-width:980px;
 }
 
 div.header{
 	margin:0 auto;
-	width:980px;
+	min-width:980px;
 	min-height:80px;
 	margin-bottom:15px;
 }
 
 div.logo{
 	float:right;
-	width:200px;
+	min-width:200px;
 	min-height:50px;
 	margin:10px 20px;	
 }
 
 div.left1{
 	float:left;
-	width:200px;
+	min-width:200px;
 	min-height:50px;
 	margin:10px 20px;
-	}
+}
 
 div.main{
 	margin:0 auto;
-	width:980px;
+	min-width:980px;
 	min-height:670px;
 	background-color:#FFF;
 }
 
-div.right{
+div.menu{
 	float:right;
-	width:250px;	
+	min-width:250px;	
 	min-height:630px;
 	margin:auto;
 }
 
-div.left{
+div.up{
+	min-width:250px;
+	min-height:100px;	
+}
+
+div.down{
+	
+}
+
+div.content{
 	margin-right:250px;
 	min-height:630px;
 	margin:auto;
-	
 }
 
 div.footer{
 	margin:0 auto;
 	min-height:50px;
-	width:980px;
+	min-width:980px;
+}
+div.link{
+	float:left;
+	min-width:200px;
+	min-height:30px;
+	margin:10px 20px;;
+}
+
+div.copy{
+	float:right;
+	min-width:200px;
+	min-height:30px;
+	margin:10px 20px;;
+}
+div.clear{
+	width:0;
+	height:0;
+	clear:both;
+	overflow:hidden;	
 }
