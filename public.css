@@ -5,8 +5,6 @@
 
 body
 {
-	background-image:url('images/my.png');
-	background-repeat:no-repeat;
 }
 
 div{
@@ -33,15 +31,15 @@ div.menu{
 	float:right;
 	width:250px;
 	min-height:585px;
-	background-image:url(images/menu.png);
-	background-repeat:no-repeat;
-	background-position:center;	
+	
 }
 
 div.up{
 	min-width:250px;
 	min-height:140px;	
 }
+
+
 
 div.down{
 	min-width:250px;
@@ -51,16 +49,20 @@ div.down{
 div.content{
 	margin-right:250px;
 	min-height:585px;
-	background-image:url(images/cont.png);
-	background-repeat:no-repeat;
-	background-position:center;
-	
-
 }
 
 div.subject{
 	min-height:100px;
+	padding-top:0.1px;
 }
+div.pagename{
+	float:right;
+	min-height:40px;
+	width:180px;
+	margin-right:40px;
+	margin-top:40px;
+}
+
 
 div.text{
 	min-height:485px;
@@ -91,6 +93,39 @@ div.form{
 	min-height:300px;
 	width:280px;
 	margin:0 8px;
+}
+
+div.title{
+	margin-left:10px;
+	min-height:35px;
+	width:200px;	
+}
+
+div.name{
+	margin-top:10px;
+	margin-left:10px;
+	min-height:35px;
+	width:270px;
+}
+
+div.email{
+	margin-top:10px;
+	margin-left:10px;
+	min-height:35px;
+	width:270px;
+}
+
+div.message{
+	margin-top:8px;
+	margin-left:10px;
+	min-height:105px;
+	width:270px;
+}
+div.send{
+	margin-top:10px;
+	margin-left:200px;
+	min-height:30px;
+	width:80px;	
 }
 
 div.footer{
