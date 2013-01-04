@@ -41,13 +41,13 @@ div.main{
 	margin:0 auto;
 	min-width:980px;
 	min-height:670px;
-	background-color:#FFF;
+	background-color:#CCC;
 }
 
 div.menu{
 	float:right;
 	min-width:250px;	
-	min-height:630px;
+	min-height:670px;
 	
 }
 
@@ -73,8 +73,25 @@ div.down a{
 
 div.content{
 	margin-right:250px;
-	min-height:630px;
+	min-height:670px;
 	margin:auto;
+	background-image:url(images/cont.png);
+	background-repeat:no-repeat;
+	background-size:730px 670px;
+}
+
+div.pic{	
+	float:left;
+	width:350px;
+	min-height:670px;
+	outline:1px solid black;
+}
+
+div.text{
+	margin-left:350px;
+	min-height:670px;
+	outline:1px solid black;
+
 }
 
 div.footer{
