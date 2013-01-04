@@ -48,7 +48,6 @@ div.menu{
 	float:right;
 	min-width:250px;	
 	min-height:670px;
-	
 }
 
 div.up{
@@ -58,8 +57,7 @@ div.up{
 
 div.down{
 	min-width:250px;
-	min-height:530px;
-	
+	min-height:530px;	
 }
 
 div.down ul.mymenu{
@@ -87,11 +85,37 @@ div.pic{
 	outline:1px solid black;
 }
 
+div.head{
+	width:350px;
+	min-height:100px;
+	outline:1px black solid;	
+}
+
+div.img{
+	width:350px;
+	min-height:570px;
+	outline:1px black solid;
+}
+
 div.text{
-	margin-left:350px;
+	float:left;
+	width:380px;
 	min-height:670px;
 	outline:1px solid black;
+}
 
+div.title{
+	width:380px;
+	min-height:220px;
+	outline:1px black solid;
+		
+}
+
+div.msg{
+	width:380px;
+	min-height:450px;
+	outline:1px black solid;
+	
 }
 
 div.footer{
@@ -99,6 +123,7 @@ div.footer{
 	min-height:50px;
 	min-width:980px;
 }
+
 div.link{
 	float:left;
 	min-width:200px;
@@ -112,6 +137,7 @@ div.copy{
 	min-height:30px;
 	margin:10px 20px;;
 }
+
 div.clear{
 	width:0;
 	height:0;
