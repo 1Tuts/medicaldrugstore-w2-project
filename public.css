@@ -5,7 +5,8 @@
 
 body
 {
-	background-color:#39F;	
+	background-color:#39F;
+	overflow:scroll;	
 }
 
 div{
@@ -114,7 +115,11 @@ div.text{
 	margin-left:30px;
 	min-height:485px;
 	padding-top:0.1px;
-
+	direction:rtl;
+	overflow:auto;
+}
+div.text p{
+	padding-right:5px;	
 }
 div.product{
 	min-height:450px;
@@ -192,10 +197,28 @@ div.picture{
 	width:220px;	
 }
 
+div.namenews{
+	float:right;
+	min-height:60px;
+	width:200px;
+	color:#333;
+	padding-right:10px;
+	font-family:"Courier New", Courier, monospace;
+}
+
+.mypic{
+	width:220px;
+	min-height:150px;	
+}
+
 div.left{
 	float:left;
 	width:340px;
-	min-height:485px;	
+	min-height:485px;
+	background-image:url(images/img51.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:250px 350px;	
 }
 
 div.right{
