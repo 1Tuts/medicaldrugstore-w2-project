@@ -54,9 +54,8 @@ div.footer{
 div.main{
 	width:950px;
 	height:600px;
-	background-color:white;
 	position:absolute;
-	top:45px;
+	top:55px;
 	bottom:55px;
 	left:0;
 	right:0;
@@ -66,8 +65,9 @@ div.main{
 div.menu{
 	float:right;
 	width:250px;
-	min-height:585px;
+	height:585px;
 	padding-top:0.1px;
+	background-color:white;
 }
 
 div.up{
@@ -109,9 +109,11 @@ div.down a{
 }
 
 div.content{
-	margin-right:250px;
-	min-height:585px;
-}
+	margin-right:265px;
+	height:585px;
+	background-color:#FFF;
+	overflow:scroll;
+	}
 
 div.subject{
 	min-height:100px;
