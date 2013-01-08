@@ -112,8 +112,7 @@ div.content{
 	margin-right:265px;
 	height:585px;
 	background-color:#FFF;
-	overflow:scroll;
-	}
+}
 
 div.subject{
 	min-height:100px;
@@ -142,6 +141,7 @@ div.text{
 div.text p{
 	padding-right:5px;	
 }
+
 div.product{
 	min-height:450px;
 	width:580px;
@@ -156,6 +156,7 @@ div.product table.t1{
 	border-radius:30px;
 	margin-left:230px;
 }
+
 div.product table.t2{
 	float:left;
 	direction:rtl;
@@ -164,6 +165,7 @@ div.product table.t2{
 	height:445px;
 	border-radius:30px;
 }
+
 div.product table.t3{
 	direction:rtl;
 	border:solid 1px #0066CC;
@@ -233,23 +235,23 @@ div.namenews{
 }
 
 div.left{
+	outline:solid 1px black;
 	float:left;
-	width:340px;
-	min-height:485px;
+	width:300px;
+	min-height:450px;
+	
+}
+
+div.right{
+	margin-left:300px;
+	outline:red 1px solid;
+	min-height:450px;
 	background-image:url(images/img51.jpg);
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size:250px 350px;	
 }
 
-div.right{
-	margin-left:350px;
-	min-height:485px;
-	outline:red 1px dashed;
-
-	
-	
-}
 div.address{
 	min-height:100px;
 	width:200px;
@@ -272,12 +274,25 @@ div.form{
 	min-height:25px;
 	font-family:"Courier New", Courier, monospace;
 	color:#333;	
+	border-radius:5px;
+	border-color:#09C;
+	box-shadow:#999 2px 2px 1px;
+	text-shadow:1px 1px 1px #666666;
 }
+
 .button{
 	font-family:"Courier New", Courier, monospace;
 	width:70px;
 	min-height:30px;
+	color:#FFF;
+	background-color:#09C;
+	font-weight:bold;
+	font-size:14px;
+	border-radius:5px;
+	box-shadow:#999 2px 2px 1px;
+	text-shadow:1px 1px 1px #666666;
 }
+
 
 div.title{
 	margin-left:80px;
@@ -306,6 +321,7 @@ div.message{
 	min-height:105px;
 	width:270px;
 }
+
 div.send{
 	margin-top:10px;
 	margin-left:200px;
@@ -313,9 +329,6 @@ div.send{
 	width:80px;	
 }
 
-div.footer{
-	
-}
 div.clear{
 	width:0;
 	height:0;
