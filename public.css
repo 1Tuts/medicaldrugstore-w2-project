@@ -98,6 +98,12 @@ div.down ul{
 
 div.down li{
 	padding-top:8px;
+	font-size:16px;
+}
+
+
+div.down li:hover{
+	font-size:18px;
 }
 
 div.down a{
@@ -105,7 +111,6 @@ div.down a{
 	padding:4px;
 	margin-bottom:5px;
 	color:#09C;
-	outline:1px red dashed;
 }
 
 div.content{
@@ -127,7 +132,8 @@ div.pagename{
 	margin-top:40px;
 	text-align:right;
 	font-size:24px;
-	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bolder;
+	font-family:"Courier New", Courier, monospace;
 	color:#00F;
 }
 
@@ -137,81 +143,69 @@ div.text{
 	padding-top:0.1px;
 	direction:rtl;
 	overflow:auto;
+	margin-right:25px;
 }
 div.text p{
 	padding-right:5px;	
 }
 
-div.product{
-	min-height:450px;
-	width:580px;
-	margin:10px auto;	
+.namekala{
+	margin-left:350px;
+	height:380px;
 }
 
-div.product table.t1{
-	direction:rtl;
-	border:solid 1px #0066CC;
-	width:300px;
-	height:445px;
-	border-radius:30px;
-	margin-left:230px;
-}
-
-div.product table.t2{
+.sefaresh{
 	float:left;
-	direction:rtl;
-	border:solid 1px #0066CC;
-	width:130px;
-	height:445px;
-	border-radius:30px;
+	width:200px;
+	height:380px;
 }
 
-div.product table.t3{
-	direction:rtl;
-	border:solid 1px #0066CC;
+.gheymat{
 	float:left;
-	height:445px;
-	border-radius:30px;
-	width:100px;
+	width:150px;
+	height:380px;
 }
 
-div.product table:hover{
-	box-shadow:#666 10px 10px 10px 5px;
+div.text ul{
+	list-style:none;
 }
 
-.one{
-	background-color:#96C8FF;
-	border-radius:30px;	
-}
-
-.two{
+div.text ul:hover{
 	
-	text-align:center;
 }
 
-.three{
-	
-	background-color:#C8E1FF;
-}
-
-div.product table tr{
-	color:#333;
-}
-
-div.product table td{
-	color:#333;
-	border-radius:30px;	
-}
-
-div.product table td:hover{
-	color:#333;
+div.text li:hover{
 	font-size:18px;
-	background-color:#69F;
 }
 
-div.product table td a{
-		text-decoration:none;
-		color:#333;
+div.text li:first-child{
+	background-color:#A7C8FF;
+	border-radius:15px 15px 0 0;
+	height:30px;
+	text-align:center;
+	font-weight:bolder;
+	font-size:18px;
+	font-family:"Courier New", Courier, monospace;
+}
+
+div.text li:even-child{
+	background-color:#09F;	
+}
+
+div.text li:odd-child{
+	background-color:#FFF;	
+}
+
+div.text li{
+	padding:13px;
+	border:1px solid #999;
+	color:#FFF;
+}
+
+div.text a{
+	text-decoration:none;
+	color:#333;
+	
 }
 
 div.picture{
@@ -235,7 +229,7 @@ div.namenews{
 }
 
 div.left{
-	outline:solid 1px black;
+	
 	float:left;
 	width:300px;
 	min-height:450px;
@@ -244,7 +238,7 @@ div.left{
 
 div.right{
 	margin-left:300px;
-	outline:red 1px solid;
+	
 	min-height:450px;
 	background-image:url(images/img51.jpg);
 	background-repeat:no-repeat;
@@ -270,7 +264,7 @@ div.form{
 }
 
 .txt{
- 	width:250px;
+ 	width:260px;
 	min-height:25px;
 	font-family:"Courier New", Courier, monospace;
 	color:#333;	
