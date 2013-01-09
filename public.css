@@ -77,7 +77,7 @@ div.up{
 }
 
 div.pic1{
-	min-height:140px;
+    height:140px;
 	width:250px;
 	background-image:url(images/6.jpeg);
 	background-repeat:no-repeat;
@@ -86,7 +86,7 @@ div.pic1{
 
 div.down{
 	min-width:250px;
-	min-height:445px;	
+	height:445px;	
 }
 
 div.down ul{
@@ -97,7 +97,7 @@ div.down ul{
 }
 
 div.down li{
-	padding-top:8px;
+	
 	font-size:16px;
 }
 
@@ -110,29 +110,32 @@ div.down li:hover{
 
 div.down a{
 	text-decoration:none;	
-	padding:3px;
-	margin-bottom:3px;
+	padding:8px;
 	color:#09C;
 	display:block;
+	width:170px;
 }
 div.down a:hover{
 	color:#FFF;
+	width:170px;
+	padding:170
 }
 
 div.content{
 	margin-right:265px;
 	height:585px;
 	background-color:#FFF;
+	overflow:auto;
 }
 
 div.subject{
-	min-height:100px;
+	height:100px;
 	padding-top:0.1px;
 }
 
 div.pagename{
 	float:right;
-	min-height:40px;
+	height:40px;
 	width:180px;
 	margin-right:40px;
 	margin-top:40px;
@@ -145,10 +148,9 @@ div.pagename{
 
 div.text{
 	margin-left:30px;
-	min-height:485px;
+	height:485px;
 	padding-top:0.1px;
 	direction:rtl;
-	overflow:auto;
 	margin-right:25px;
 }
 div.text p{
@@ -184,7 +186,6 @@ div.text li:nth-child(even) {
 }
 div.text li:nth-child(odd) {
 	background-color:#A7C8FF;
-	
 }
 
 div.text li:hover{
@@ -192,7 +193,6 @@ div.text li:hover{
 }
 
 div.text li:first-child{
-	
 	border-radius:15px 15px 0 0;
 	background-color:#09F;
 	height:30px;
@@ -211,27 +211,25 @@ div.text li{
 div.text a{
 	text-decoration:none;
 	color:#333;
-	
 }
 
 div.picture{
 	float:left;
-	min-height:150px;
-	width:220px;	
+	height:120px;
+	width:200px;	
 }
 
 div.namenews{
 	float:right;
 	min-height:60px;
 	width:200px;
-	color:#333;
 	padding-right:10px;
 	font-family:"Courier New", Courier, monospace;
 }
 
 .mypic{
-	width:220px;
-	min-height:150px;	
+	width:200px;
+	height:120px;	
 }
 
 div.left{
@@ -239,13 +237,11 @@ div.left{
 	float:left;
 	width:300px;
 	min-height:450px;
-	
 }
 
 div.right{
 	margin-left:300px;
-	
-	min-height:450px;
+ 	min-height:450px;
 	background-image:url(images/img51.jpg);
 	background-repeat:no-repeat;
 	background-position:center;
