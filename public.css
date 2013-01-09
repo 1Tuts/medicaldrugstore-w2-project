@@ -101,16 +101,22 @@ div.down li{
 	font-size:16px;
 }
 
-
 div.down li:hover{
 	font-size:18px;
+	background-color:#09F;
+	width:170px;
+	
 }
 
 div.down a{
 	text-decoration:none;	
-	padding:4px;
-	margin-bottom:5px;
+	padding:3px;
+	margin-bottom:3px;
 	color:#09C;
+	display:block;
+}
+div.down a:hover{
+	color:#FFF;
 }
 
 div.content{
@@ -170,7 +176,14 @@ div.text ul{
 	list-style:none;
 }
 
-div.text ul:hover{
+.namekala:hover{
+	box-shadow:10px 10px 5px #666666;
+}
+div.text li:nth-child(even) {
+	background-color:#FFF;
+}
+div.text li:nth-child(odd) {
+	background-color:#A7C8FF;
 	
 }
 
@@ -179,21 +192,14 @@ div.text li:hover{
 }
 
 div.text li:first-child{
-	background-color:#A7C8FF;
+	
 	border-radius:15px 15px 0 0;
+	background-color:#09F;
 	height:30px;
 	text-align:center;
 	font-weight:bolder;
 	font-size:18px;
 	font-family:"Courier New", Courier, monospace;
-}
-
-div.text li:even-child{
-	background-color:#09F;	
-}
-
-div.text li:odd-child{
-	background-color:#FFF;	
 }
 
 div.text li{
