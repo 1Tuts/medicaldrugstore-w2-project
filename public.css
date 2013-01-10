@@ -136,7 +136,7 @@ div.subject{
 div.pagename{
 	float:right;
 	height:40px;
-	width:180px;
+	width:280px;
 	margin-right:40px;
 	margin-top:40px;
 	text-align:right;
@@ -146,12 +146,86 @@ div.pagename{
 	color:#00F;
 }
 
+div.picture{
+	float:left;
+	height:120px;
+	width:200px;
+	margin:30px;	
+}
+
 div.text{
 	margin-left:30px;
 	height:485px;
 	padding-top:0.1px;
 	direction:rtl;
 	margin-right:25px;
+}
+
+div.user{
+	width:250px;
+	height:70px;
+	margin:30px;
+	background-color:#9F0;
+	border-radius:6px;
+	padding-right: 14px;
+	color:#FFF;
+	font-weight:bold;
+	font-family:"Courier New", Courier, monospace;
+}
+
+div.password{
+	width:250px;
+	height:70px;
+	margin:30px;
+	background-color:#3CF;
+	border-radius:6px;
+	padding-right: 14px;
+	color:#FFF;
+	font-weight:bold;
+	font-family:"Courier New", Courier, monospace;	
+}
+
+div.mail{
+	width:250px;
+	height:70px;
+	margin:30px;
+	background-color:#F60;
+	border-radius:6px;
+	padding-right: 14px;
+	padding-top: 3px;
+	color:#FFF;
+	font-weight:bold;
+	font-family:"Courier New", Courier, monospace;
+}
+
+div.tel{
+	width:250px;
+	height:70px;
+	margin:30px;
+	background-color:#90C;
+	border-radius:6px;
+	padding-right: 14px;
+	color:#FFF;
+	font-weight:bold;
+	font-family:"Courier New", Courier, monospace;
+}
+.signup{
+	width:200px;
+	height:25px;
+	border-radius:5px;
+	border:1px solid  #666;
+	margin-top:10px;
+	margin-right:23px;	
+}
+.submit{
+	background-color:#333;
+	color:#FFF;
+	text-align:center;
+	width:110px;
+	height:35px;
+	margin-right:30px;
+	border-radius:5px;	
+	font-family:"Courier New", Courier, monospace;
 }
 div.text p{
 	padding-right:5px;	
@@ -211,12 +285,6 @@ div.text li{
 div.text a{
 	text-decoration:none;
 	color:#333;
-}
-
-div.picture{
-	float:left;
-	height:120px;
-	width:200px;	
 }
 
 div.namenews{
