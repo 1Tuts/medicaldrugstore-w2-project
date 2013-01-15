@@ -144,6 +144,13 @@ div.pagename{
 	font-weight:bolder;
 	font-family:"Courier New", Courier, monospace;
 	color:#00F;
+	text-align:center;
+}
+
+div.pagename:hover{
+	text-shadow:#999 2px 2px 2px;
+	color:#FFF;
+	background-color:#33F;	
 }
 
 div.picture{
@@ -171,6 +178,20 @@ div.user{
 	color:#FFF;
 	font-weight:bold;
 	font-family:"Courier New", Courier, monospace;
+	-moz-transition:all 1s;
+	-ms-transition:all 1s;
+	-o-transition:all 1s;
+	-webkit-transition:all 1s;
+}
+
+div.user:hover{
+	box-shadow:#666 10px 10px 5px;
+	width:260px;
+	height:85px;
+	-moz-transition:all 700ms;
+	-ms-transition:all 700ms;
+	-o-transition:all 700ms;
+	-webkit-transition:all 700ms;
 }
 
 div.password{
@@ -182,7 +203,21 @@ div.password{
 	padding-right: 14px;
 	color:#FFF;
 	font-weight:bold;
-	font-family:"Courier New", Courier, monospace;	
+	font-family:"Courier New", Courier, monospace;
+	-moz-transition:all 1s;
+	-ms-transition:all 1s;
+	-o-transition:all 1s;
+	-webkit-transition:all 1s;	
+}
+
+div.password:hover{
+	box-shadow:#666 10px 10px 5px;
+	width:260px;
+	height:80px;
+	-moz-transition:all 700ms;
+	-ms-transition:all 700ms;
+	-o-transition:all 700ms;
+	-webkit-transition:all 700ms;
 }
 
 div.mail{
@@ -196,8 +231,31 @@ div.mail{
 	color:#FFF;
 	font-weight:bold;
 	font-family:"Courier New", Courier, monospace;
+	-moz-transition:all 1s;
+	-ms-transition:all 1s;
+	-o-transition:all 1s;
+	-webkit-transition:all 1s;
 }
 
+div.mail:hover{
+	box-shadow:#666 10px 10px 5px;
+	width:260px;
+	height:80px;
+	-moz-transition:all 700ms;
+	-ms-transition:all 700ms;
+	-o-transition:all 700ms;
+	-webkit-transition:all 700ms;
+}
+
+div.tel:hover{
+	box-shadow:#666 10px 10px 5px;
+	width:260px;
+	height:80px;
+	-moz-transition:all 700ms;
+	-ms-transition:all 700ms;
+	-o-transition:all 700ms;
+	-webkit-transition:all 700ms;
+}
 div.tel{
 	width:250px;
 	height:70px;
@@ -208,7 +266,13 @@ div.tel{
 	color:#FFF;
 	font-weight:bold;
 	font-family:"Courier New", Courier, monospace;
+	-moz-transition:all 1s;
+	-ms-transition:all 1s;
+	-o-transition:all 1s;
+	-webkit-transition:all 1s;
 }
+
+
 .signup{
 	width:200px;
 	height:25px;
@@ -227,6 +291,10 @@ div.tel{
 	border-radius:5px;	
 	font-family:"Courier New", Courier, monospace;
 }
+.submit:hover{
+	box-shadow:#666 5px 5px 3px;
+}
+
 div.text p{
 	padding-right:5px;	
 }
@@ -255,6 +323,15 @@ div.text ul{
 .namekala:hover{
 	box-shadow:10px 10px 5px #666666;
 }
+
+.gheymat:hover{
+	box-shadow:10px 10px 5px #666666;
+}
+
+.sefaresh:hover{
+	box-shadow:10px 10px 5px #666666;
+}
+
 div.text li:nth-child(even) {
 	background-color:#FFF;
 }
@@ -310,7 +387,7 @@ div.left{
 div.right{
 	margin-left:300px;
  	min-height:450px;
-	background-image:url(images/img51.jpg);
+	
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size:250px 350px;	
