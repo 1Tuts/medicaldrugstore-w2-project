@@ -40,23 +40,25 @@
                     
                 </div>
                 <div class="text">
+                	<form action="sign.php" method="post">
                 	    <div class="user">
-                        نام کاربری<input type="text" class="signup"/>
+                        نام کاربری<input type="text" name="user" class="signup"/>
                         </div>  
                         <div class="password">
-                        رمز عبور<input type="password" class="signup"/>
+                        رمز عبور<input type="password" name="pass" class="signup"/>
                         </div>
                         <div class="tel">
-                        شماره تلفن<input type="tel" class="signup"/>
+                        شماره تلفن<input type="tel" name="tel" class="signup"/>
                         </div> 
                         <div class="mail">
-                        آدرس اینترنتی<input type="email" class="signup"/>
+                        آدرس اینترنتی<input type="email" name="mail" class="signup"/>
                         </div>
                         <div class="butt">
-                        	<input type="submit" value="ثبت اطلاعات" class="submit">
+                        	<input type="submit"  name="submit" value="ثبت اطلاعات" class="submit">
                             <input type="reset" value="پاک کردن فرم" class="submit">
                         </div>  
                 </div>
+                </form>
             </div>
             <div class="clear">
             </div>
