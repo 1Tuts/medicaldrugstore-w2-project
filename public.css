@@ -26,7 +26,7 @@ div.backefct{
 	top:0;
 	bottom:0;
 	z-index:-1;
-	background-image:url('images/picefct.png');
+	background-image:url(images/picefct.png);
 }
 div.container{
 
@@ -169,12 +169,12 @@ div.text{
 }
 
 div.user{
-	width:250px;
+	width:230px;
 	height:70px;
 	margin:30px;
 	background-color:#9F0;
 	border-radius:6px;
-	padding-right: 14px;
+	padding-right: 5px;
 	color:#FFF;
 	font-weight:bold;
 	font-family:"Courier New", Courier, monospace;
@@ -186,8 +186,8 @@ div.user{
 
 div.user:hover{
 	box-shadow:#666 10px 10px 5px;
-	width:260px;
-	height:85px;
+	width:235px;
+	height:73px;
 	-moz-transition:all 700ms;
 	-ms-transition:all 700ms;
 	-o-transition:all 700ms;
@@ -195,12 +195,12 @@ div.user:hover{
 }
 
 div.password{
-	width:250px;
+	width:230px;
 	height:70px;
 	margin:30px;
 	background-color:#3CF;
 	border-radius:6px;
-	padding-right: 14px;
+	padding-right: 5px;
 	color:#FFF;
 	font-weight:bold;
 	font-family:"Courier New", Courier, monospace;
@@ -212,8 +212,8 @@ div.password{
 
 div.password:hover{
 	box-shadow:#666 10px 10px 5px;
-	width:260px;
-	height:80px;
+	width:235px;
+	height:73px;
 	-moz-transition:all 700ms;
 	-ms-transition:all 700ms;
 	-o-transition:all 700ms;
@@ -221,12 +221,12 @@ div.password:hover{
 }
 
 div.mail{
-	width:250px;
+	width:230px;
 	height:70px;
 	margin:30px;
 	background-color:#F60;
 	border-radius:6px;
-	padding-right: 14px;
+	padding-right: 5px;
 	padding-top: 3px;
 	color:#FFF;
 	font-weight:bold;
@@ -239,8 +239,8 @@ div.mail{
 
 div.mail:hover{
 	box-shadow:#666 10px 10px 5px;
-	width:260px;
-	height:80px;
+	width:235px;
+	height:73px;
 	-moz-transition:all 700ms;
 	-ms-transition:all 700ms;
 	-o-transition:all 700ms;
@@ -249,20 +249,20 @@ div.mail:hover{
 
 div.tel:hover{
 	box-shadow:#666 10px 10px 5px;
-	width:260px;
-	height:80px;
+	width:235px;
+	height:73px;
 	-moz-transition:all 700ms;
 	-ms-transition:all 700ms;
 	-o-transition:all 700ms;
 	-webkit-transition:all 700ms;
 }
 div.tel{
-	width:250px;
+	width:230px;
 	height:70px;
 	margin:30px;
 	background-color:#90C;
 	border-radius:6px;
-	padding-right: 14px;
+	padding-right: 15px;
 	color:#FFF;
 	font-weight:bold;
 	font-family:"Courier New", Courier, monospace;
@@ -279,7 +279,7 @@ div.tel{
 	border-radius:5px;
 	border:1px solid  #666;
 	margin-top:10px;
-	margin-right:23px;	
+	margin-right:5px;	
 }
 .submit{
 	background-color:#333;
@@ -346,7 +346,7 @@ div.text li:hover{
 div.text li:first-child{
 	border-radius:15px 15px 0 0;
 	background-color:#09F;
-	height:30px;
+	height:15px;
 	text-align:center;
 	font-weight:bolder;
 	font-size:18px;
