@@ -20,3 +20,4 @@ if($page == 'users'){
 if(!file_exists("template/$page.php")) $page='404';
 
 @include "template/$page.php";
+?>
